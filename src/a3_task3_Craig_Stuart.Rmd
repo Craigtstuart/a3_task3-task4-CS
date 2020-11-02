@@ -38,9 +38,9 @@ ggplot(data = sb_clean_urchins, aes(x = size)) +
 - use `ggplot()` and `geom_boxplot` to Visualize the size distribution between purple and red urchins in an alternate way.
 
 ```{r}
-ggplot(data = sb_clean_urchins, aes(x = size)) +
-  geom_boxplot() +
-  facet_wrap(~common_name)
+ggplot(data = sb_clean_urchins, 
+       aes(x = common_name, y = size)) +
+  geom_boxplot()
 ```
 
 ### 2. Create a summary statistics table
