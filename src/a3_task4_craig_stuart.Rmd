@@ -1,0 +1,23 @@
+---
+title: "a3_task4_craig_stuart"
+author: "Craig Stuart"
+date: "11/2/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE,  warning = FALSE, message = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# Attach packages 
+library(tidyverse)
+library(here)
+```
+
+#### Read in urchins.csv data
+```{r}
+sb_urchins <- read_csv(here("data", "urchins.csv"))
+
+#clean variable names 
+sb_clean_urchins <- sb_urchins %>% 
+  clean_names()
+```
+
