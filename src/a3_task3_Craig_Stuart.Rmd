@@ -91,12 +91,34 @@ purple_urchin <- sb_clean_urchins %>%
 class(purple_urchin)
 ```
 
-- Make a summary table containing the total number of purple urchins observed by site and year
+### 2. Make a summary table containing the total number of purple urchins observed by site and year
+- Summarize the number of purple urchins per site, per year
+- Use the `group_by()` and `count()` functions to orgnaize summary table
 
 ```{r}
 purple_urchin_stats <- purple_urchin %>% 
-  group_by()
+  group_by(year_new) %>% 
+  count(site_full, year_new)
+
+kable(purple_urchin_stats)
 ```
+
+- Make exploratory graph to visualize counts of purple urchins at each site
+
+```{r}
+ggplot(data = purple_urchin_stats, aes(x = year_new, y = n, fill = site_full)) +
+  geom_col() +
+  facet_wrap(~site_full)
+```
+
+
+
+
+
+
+
+
+
 
 
 
