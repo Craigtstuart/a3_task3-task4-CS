@@ -385,6 +385,11 @@ library(here)
 library(janitor)
 library(knitr)
 library(lubridate)</code></pre>
+<div id="task-3-objective" class="section level2">
+<h2>Task 3 Objective:</h2>
+<ul>
+<li>Use version control, project management, and data wrangling, analysis and visualization skills to explore red and purple urchin samples recorded by Santa Barbara Coastal Long Term Ecological Research program divers. This task will be broken up into multiple sections in which I will compare the distribution of red and purple urchin sizes and then explore the number of urchins samples by site and year.</li>
+</ul>
 <div id="read-in-urchins.csv-data" class="section level4">
 <h4>Read in urchins.csv data</h4>
 <pre class="r"><code>sb_urchins &lt;- read_csv(here(&quot;data&quot;, &quot;urchins.csv&quot;))</code></pre>
@@ -397,9 +402,12 @@ library(lubridate)</code></pre>
 ##   SCIENTIFIC_NAME = col_character(),
 ##   COMMON_NAME = col_character()
 ## )</code></pre>
-<pre class="r"><code>#clean variable names 
-sb_clean_urchins &lt;- sb_urchins %&gt;% 
+</div>
+<div id="clean-variable-names-in-data" class="section level4">
+<h4>Clean variable names in data</h4>
+<pre class="r"><code>sb_clean_urchins &lt;- sb_urchins %&gt;% 
   clean_names()</code></pre>
+</div>
 </div>
 <div id="section-1-size-comparisons-of-purple-and-red-urchins" class="section level2">
 <h2>Section 1: Size comparisons of purple and red urchins</h2>

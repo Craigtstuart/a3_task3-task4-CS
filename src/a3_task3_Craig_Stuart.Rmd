@@ -15,11 +15,16 @@ library(knitr)
 library(lubridate)
 ```
 
+## Task 3 Objective:
+- Use version control, project management, and data wrangling, analysis and visualization skills to explore red and purple urchin samples recorded by Santa Barbara Coastal Long Term Ecological Research program divers. This task will be broken up into multiple sections in which I will compare the distribution of red and purple urchin sizes and then explore the number of urchins samples by site and year. 
+
 #### Read in urchins.csv data
 ```{r}
 sb_urchins <- read_csv(here("data", "urchins.csv"))
+```
 
-#clean variable names 
+#### Clean variable names in data 
+```{r}
 sb_clean_urchins <- sb_urchins %>% 
   clean_names()
 ```
