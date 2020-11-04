@@ -72,7 +72,9 @@ kable(urchin_stats)
 ```
 
 ### 3. Overall takeaways of size comparison between two urchin species 
-Overall, the size of both samples of species of urchin are normally distributed. The purple urchins have a smaller mean size (mean = 4.47 cm) and the red urchins have a larger mean size (mean = 6.78 cm). Based on the histogram visualizations, the purple urchins exhibit a leptokurtic distribution with less data spread (sd = 1.18 cm), whereas the red urchins have a kurtosis distribution with a normal spread (sd = 1.89). This spread can also been visually interpreted in the boxplot graph between purple and red urchins. The actual difference between the means of purple and red urchins is 2.3067 cm and the percent difference of mean urchin diameter between the two species of urchins is 34.04%. 
+
+Overall, both samples of urchins show a normal distribution of data based on their histogram visualizations, with purple urchins exhibiting less data spread (sd = 1.18 cm) and a leptokurtic distribution, while the red urchins exhibits slightly more spread (sd = 1.89 cm) and a normal kurtosis distribution curve. The means of the purple and red urchins (4.47 cm and 6.78 cm, respectively) are relatively close in size distribution, only having mean difference of 2.31 cm. Considering the % difference of the two means, we get a 34% difference, suggesting a relatively low difference that could mean that the samples hace a higher chance of being taken from the same population. 
+
 
 ## Section 2: Explore Purple Urchin Counts by Site and Year
 ### 1. Wrangle data to create a subset of purple urchin data
