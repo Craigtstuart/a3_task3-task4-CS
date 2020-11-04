@@ -474,12 +474,12 @@ library(lubridate)</code></pre>
 6.776489 - 4.469797</code></pre>
 <pre><code>## [1] 2.306692</code></pre>
 <pre class="r"><code># Percent Difference between urchin population means
-(6.776489 - 4.469797) / (6.776489) * 100</code></pre>
-<pre><code>## [1] 34.03963</code></pre>
+(6.776489 - 4.469797) / ((6.776489 + 4.469797)/2) * 100</code></pre>
+<pre><code>## [1] 41.0214</code></pre>
 </div>
 <div id="overall-takeaways-of-size-comparison-between-two-urchin-species" class="section level3">
 <h3>3. Overall takeaways of size comparison between two urchin species</h3>
-<p>Overall, both samples of urchins show a normal distribution of data based on their histogram visualizations, with purple urchins exhibiting less data spread (sd = 1.18 cm) and a leptokurtic distribution, while the red urchins exhibits slightly more spread (sd = 1.89 cm) and a normal kurtosis distribution curve. The means of the purple and red urchins (4.47 cm and 6.78 cm, respectively) are relatively close in size distribution, only having mean difference of 2.31 cm. Considering the % difference of the two means, we get a 34% difference, suggesting a relatively low difference that could mean that the samples hace a higher chance of being taken from the same population.</p>
+<p>Overall, both samples of urchins show a normal distribution of data based on their histogram visualizations, with purple urchins exhibiting less data spread (sd = 1.18 cm) and a leptokurtic distribution, while the red urchins exhibits slightly more spread (sd = 1.89 cm) and a normal kurtosis distribution curve. The means of the purple and red urchins (4.47 cm and 6.78 cm, respectively) are relatively close in size distribution, only having mean difference of 2.31 cm. To calculate the % difference of the two means, I chose to find the difference between the means and divide by the average of the means to get a 41% difference, suggesting a relatively low difference and a higher chance of being taken from the same population.</p>
 </div>
 </div>
 <div id="section-2-explore-purple-urchin-counts-by-site-and-year" class="section level2">
