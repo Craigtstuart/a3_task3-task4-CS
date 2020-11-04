@@ -388,7 +388,7 @@ library(knitr)</code></pre>
 <div id="task-4-objective" class="section level2">
 <h2>Task 4 Objective:</h2>
 <ul>
-<li>Compare the mean size of purple urchins between the control and annual treatments within the Naples Reef site in January of 2010. I will use basic exploratory graphs to plot the data comparisons between the two treatments to observe the data distribution. Then I will perform a t-test to interpret and understand the distriubtion of means between the two groups.</li>
+<li>Use version control, project management, and data wrangling, analysis and visualization skills to explore red and purple urchin samples recorded by Santa Barbara Coastal Long Term Ecological Research program divers. I will compare the mean size of purple urchins between the control and annual treatments within the Naples Reef site in January of 2010. I will use basic exploratory graphs to plot the data comparisons between the two treatments to observe the data distribution. Then I will perform a t-test to interpret and understand the distribution of means between the two groups.</li>
 </ul>
 <div id="read-in-urchins.csv-data" class="section level4">
 <h4>Read in urchins.csv data</h4>
@@ -441,6 +441,7 @@ library(knitr)</code></pre>
 <ul>
 <li>Write 1 - 2 sentences describing your main takeaways about the distribution of urchin sizes for each group.</li>
 </ul>
+<p>From the histogram distribution plot, we can observe a general normal distribution curve among the urchin sizes for each treatment group, though it’s not totally apparent. There also seems to be a slight positive skew in the distribution curve. We can use the quantile-quantile plot to further assess if our distribution is normal by checking if there is a linear relationship. The linear relationship in the qq plot is easy to see and therefore we can confirm that our samples are normally distributed.</p>
 </div>
 <div id="create-a-basic-table-of-descriptive-statistics-for-both-groups-including-at-least-the-mean-standard-deviation-and-sample-size" class="section level3">
 <h3>3. Create a basic table of descriptive statistics for both groups (including at least the mean, standard deviation, and sample size)</h3>
@@ -507,7 +508,7 @@ t.test(x = annual_treatment, y = control_treatment)</code></pre>
 ## mean of x mean of y 
 ##  3.916667  3.725806</code></pre>
 <ul>
-<li>Write a comprehensive statement comparing the means, providing meaningful discussion of means difference beyong the p-value.</li>
+<li>Write a comprehensive statement comparing the means, providing meaningful discussion of means difference beyond the p-value.</li>
 </ul>
 </div>
 </div>

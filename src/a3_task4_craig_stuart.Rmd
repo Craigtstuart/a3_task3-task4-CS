@@ -62,7 +62,7 @@ ggplot(data = treatment_urchins, aes(sample = size)) +
 
 - Write 1 - 2 sentences describing your main takeaways about the distribution of urchin sizes for each group.
 
-
+From the histogram distribution plot, we can observe a general normal distribution curve among the urchin sizes for each treatment group, though it's not totally apparent. There also seems to be a slight positive skew in the distribution curve. We can use the quantile-quantile plot to further assess if our distribution is normal by checking if there is a linear relationship. The linear relationship in the qq plot is easy to see and therefore we can confirm that our samples are normally distributed.  
 
 
 ### 3. Create a basic table of descriptive statistics for both groups (including at least the mean, standard deviation, and sample size)
@@ -94,7 +94,7 @@ control_treatment <- treatment_urchins %>%
 t.test(x = annual_treatment, y = control_treatment)
 ```
 
-- Write a comprehensive statement comparing the means, providing meaningful discussion of means difference beyong the p-value. 
+- Write a comprehensive statement comparing the means, providing meaningful discussion of means difference beyond the p-value. 
 
 
 
